@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= htmlWebpackPlugin.options.title %> | PicStory</title>
+  </head>
+
+  <body>
+    <header-bar
+      class="sticky-top"
+      logo="../../favicon.png"
+      brandName="<%= brandName %>"
+    ></header-bar>
+
+    <main class="container-fluid flex w-100">
+      <hero-bar img="/image/pengaturan.png" type="setting"></hero-bar>
+
+      <main-app class="container-fluid w-100 p-auto px-5">
+        <pengaturan-bar class="row g-2 text-capitalize padded-20"></pengaturan-bar>
+      </main-app>
+    </main>
+
+    <footer-bar class="bg-body-tertiary text-center"></footer-bar>
+  </body>
+</html>
